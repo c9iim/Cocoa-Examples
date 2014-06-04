@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25698EE3193B2CF5005F78EF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25698EE2193B2CF5005F78EF /* Cocoa.framework */; };
+		25698EE5193B2CF5005F78EF /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25698EE4193B2CF5005F78EF /* AppleScriptObjC.framework */; };
+		25698EEF193B2CF5005F78EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25698EED193B2CF5005F78EF /* InfoPlist.strings */; };
+		25698EF1193B2CF5005F78EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25698EF0193B2CF5005F78EF /* main.m */; };
+		25698EF5193B2CF5005F78EF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 25698EF3193B2CF5005F78EF /* Credits.rtf */; };
+		25698EF7193B2CF5005F78EF /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 25698EF6193B2CF5005F78EF /* AppDelegate.applescript */; };
+		25698EFA193B2CF5005F78EF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25698EF8193B2CF5005F78EF /* MainMenu.xib */; };
+		25698EFC193B2CF5005F78EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25698EFB193B2CF5005F78EF /* Images.xcassets */; };
+		25698F04193B2EE2005F78EF /* SheetModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 25698F03193B2EE2005F78EF /* SheetModal.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25698EDF193B2CF5005F78EF /* Show open save panel as sheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Show open save panel as sheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25698EE2193B2CF5005F78EF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		25698EE4193B2CF5005F78EF /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		25698EE7193B2CF5005F78EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		25698EE8193B2CF5005F78EF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		25698EE9193B2CF5005F78EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		25698EEC193B2CF5005F78EF /* Show open save panel as sheet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Show open save panel as sheet-Info.plist"; sourceTree = "<group>"; };
+		25698EEE193B2CF5005F78EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25698EF0193B2CF5005F78EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25698EF2193B2CF5005F78EF /* Show open save panel as sheet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Show open save panel as sheet-Prefix.pch"; sourceTree = "<group>"; };
+		25698EF4193B2CF5005F78EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		25698EF6193B2CF5005F78EF /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
+		25698EF9193B2CF5005F78EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		25698EFB193B2CF5005F78EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		25698F02193B2EE2005F78EF /* SheetModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SheetModal.h; sourceTree = "<group>"; };
+		25698F03193B2EE2005F78EF /* SheetModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SheetModal.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25698EDC193B2CF5005F78EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25698EE5193B2CF5005F78EF /* AppleScriptObjC.framework in Frameworks */,
+				25698EE3193B2CF5005F78EF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25698ED6193B2CF5005F78EF = {
+			isa = PBXGroup;
+			children = (
+				25698EEA193B2CF5005F78EF /* Show open save panel as sheet */,
+				25698EE1193B2CF5005F78EF /* Frameworks */,
+				25698EE0193B2CF5005F78EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25698EE0193B2CF5005F78EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25698EDF193B2CF5005F78EF /* Show open save panel as sheet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25698EE1193B2CF5005F78EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25698EE2193B2CF5005F78EF /* Cocoa.framework */,
+				25698EE4193B2CF5005F78EF /* AppleScriptObjC.framework */,
+				25698EE6193B2CF5005F78EF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25698EE6193B2CF5005F78EF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25698EE7193B2CF5005F78EF /* AppKit.framework */,
+				25698EE8193B2CF5005F78EF /* CoreData.framework */,
+				25698EE9193B2CF5005F78EF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		25698EEA193B2CF5005F78EF /* Show open save panel as sheet */ = {
+			isa = PBXGroup;
+			children = (
+				25698EF6193B2CF5005F78EF /* AppDelegate.applescript */,
+				25698EF8193B2CF5005F78EF /* MainMenu.xib */,
+				25698EFB193B2CF5005F78EF /* Images.xcassets */,
+				25698EEB193B2CF5005F78EF /* Supporting Files */,
+				25698F02193B2EE2005F78EF /* SheetModal.h */,
+				25698F03193B2EE2005F78EF /* SheetModal.m */,
+			);
+			path = "Show open save panel as sheet";
+			sourceTree = "<group>";
+		};
+		25698EEB193B2CF5005F78EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25698EEC193B2CF5005F78EF /* Show open save panel as sheet-Info.plist */,
+				25698EED193B2CF5005F78EF /* InfoPlist.strings */,
+				25698EF0193B2CF5005F78EF /* main.m */,
+				25698EF2193B2CF5005F78EF /* Show open save panel as sheet-Prefix.pch */,
+				25698EF3193B2CF5005F78EF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25698EDE193B2CF5005F78EF /* Show open save panel as sheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25698EFF193B2CF5005F78EF /* Build configuration list for PBXNativeTarget "Show open save panel as sheet" */;
+			buildPhases = (
+				25698EDB193B2CF5005F78EF /* Sources */,
+				25698EDC193B2CF5005F78EF /* Frameworks */,
+				25698EDD193B2CF5005F78EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Show open save panel as sheet";
+			productName = "Show open save panel as sheet";
+			productReference = 25698EDF193B2CF5005F78EF /* Show open save panel as sheet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25698ED7193B2CF5005F78EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = c9iim;
+			};
+			buildConfigurationList = 25698EDA193B2CF5005F78EF /* Build configuration list for PBXProject "Show open save panel as sheet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25698ED6193B2CF5005F78EF;
+			productRefGroup = 25698EE0193B2CF5005F78EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25698EDE193B2CF5005F78EF /* Show open save panel as sheet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25698EDD193B2CF5005F78EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25698EEF193B2CF5005F78EF /* InfoPlist.strings in Resources */,
+				25698EFC193B2CF5005F78EF /* Images.xcassets in Resources */,
+				25698EF5193B2CF5005F78EF /* Credits.rtf in Resources */,
+				25698EFA193B2CF5005F78EF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25698EDB193B2CF5005F78EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25698EF7193B2CF5005F78EF /* AppDelegate.applescript in Sources */,
+				25698EF1193B2CF5005F78EF /* main.m in Sources */,
+				25698F04193B2EE2005F78EF /* SheetModal.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		25698EED193B2CF5005F78EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25698EEE193B2CF5005F78EF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		25698EF3193B2CF5005F78EF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25698EF4193B2CF5005F78EF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		25698EF8193B2CF5005F78EF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25698EF9193B2CF5005F78EF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25698EFD193B2CF5005F78EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		25698EFE193B2CF5005F78EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		25698F00193B2CF5005F78EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Show open save panel as sheet/Show open save panel as sheet-Prefix.pch";
+				INFOPLIST_FILE = "Show open save panel as sheet/Show open save panel as sheet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		25698F01193B2CF5005F78EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Show open save panel as sheet/Show open save panel as sheet-Prefix.pch";
+				INFOPLIST_FILE = "Show open save panel as sheet/Show open save panel as sheet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25698EDA193B2CF5005F78EF /* Build configuration list for PBXProject "Show open save panel as sheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25698EFD193B2CF5005F78EF /* Debug */,
+				25698EFE193B2CF5005F78EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25698EFF193B2CF5005F78EF /* Build configuration list for PBXNativeTarget "Show open save panel as sheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25698F00193B2CF5005F78EF /* Debug */,
+				25698F01193B2CF5005F78EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25698ED7193B2CF5005F78EF /* Project object */;
+}

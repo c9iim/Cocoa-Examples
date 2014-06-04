@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25A69B1E193F601E00548891 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A69B1D193F601E00548891 /* Cocoa.framework */; };
+		25A69B20193F601E00548891 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A69B1F193F601E00548891 /* AppleScriptObjC.framework */; };
+		25A69B2A193F601E00548891 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25A69B28193F601E00548891 /* InfoPlist.strings */; };
+		25A69B2C193F601E00548891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A69B2B193F601E00548891 /* main.m */; };
+		25A69B30193F601E00548891 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 25A69B2E193F601E00548891 /* Credits.rtf */; };
+		25A69B32193F601E00548891 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 25A69B31193F601E00548891 /* AppDelegate.applescript */; };
+		25A69B35193F601E00548891 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A69B33193F601E00548891 /* MainMenu.xib */; };
+		25A69B37193F601E00548891 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A69B36193F601E00548891 /* Images.xcassets */; };
+		25A69B3E193F605D00548891 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 25A69B3D193F605D00548891 /* rb_main.rb */; };
+		25A69B43193F60C800548891 /* GreetAS.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 25A69B3F193F60C800548891 /* GreetAS.applescript */; };
+		25A69B44193F60C800548891 /* GreetObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A69B41193F60C800548891 /* GreetObjC.m */; };
+		25A69B45193F60C800548891 /* GreetRb.rb in Resources */ = {isa = PBXBuildFile; fileRef = 25A69B42193F60C800548891 /* GreetRb.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25A69B1A193F601E00548891 /* Mixed language.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mixed language.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A69B1D193F601E00548891 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		25A69B1F193F601E00548891 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		25A69B22193F601E00548891 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		25A69B23193F601E00548891 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		25A69B24193F601E00548891 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		25A69B27193F601E00548891 /* Mixed language-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mixed language-Info.plist"; sourceTree = "<group>"; };
+		25A69B29193F601E00548891 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		25A69B2B193F601E00548891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25A69B2D193F601E00548891 /* Mixed language-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mixed language-Prefix.pch"; sourceTree = "<group>"; };
+		25A69B2F193F601E00548891 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		25A69B31193F601E00548891 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
+		25A69B34193F601E00548891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		25A69B36193F601E00548891 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		25A69B3D193F605D00548891 /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		25A69B3F193F60C800548891 /* GreetAS.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = GreetAS.applescript; sourceTree = "<group>"; };
+		25A69B40193F60C800548891 /* GreetObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreetObjC.h; sourceTree = "<group>"; };
+		25A69B41193F60C800548891 /* GreetObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreetObjC.m; sourceTree = "<group>"; };
+		25A69B42193F60C800548891 /* GreetRb.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = GreetRb.rb; sourceTree = "<group>"; };
+		25A69B46193F61BD00548891 /* Documents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documents; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25A69B17193F601E00548891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A69B20193F601E00548891 /* AppleScriptObjC.framework in Frameworks */,
+				25A69B1E193F601E00548891 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25A69B11193F601E00548891 = {
+			isa = PBXGroup;
+			children = (
+				25A69B46193F61BD00548891 /* Documents */,
+				25A69B25193F601E00548891 /* Mixed language */,
+				25A69B1C193F601E00548891 /* Frameworks */,
+				25A69B1B193F601E00548891 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25A69B1B193F601E00548891 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25A69B1A193F601E00548891 /* Mixed language.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25A69B1C193F601E00548891 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25A69B1D193F601E00548891 /* Cocoa.framework */,
+				25A69B1F193F601E00548891 /* AppleScriptObjC.framework */,
+				25A69B21193F601E00548891 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25A69B21193F601E00548891 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25A69B22193F601E00548891 /* AppKit.framework */,
+				25A69B23193F601E00548891 /* CoreData.framework */,
+				25A69B24193F601E00548891 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		25A69B25193F601E00548891 /* Mixed language */ = {
+			isa = PBXGroup;
+			children = (
+				25A69B31193F601E00548891 /* AppDelegate.applescript */,
+				25A69B33193F601E00548891 /* MainMenu.xib */,
+				25A69B3F193F60C800548891 /* GreetAS.applescript */,
+				25A69B40193F60C800548891 /* GreetObjC.h */,
+				25A69B41193F60C800548891 /* GreetObjC.m */,
+				25A69B42193F60C800548891 /* GreetRb.rb */,
+				25A69B36193F601E00548891 /* Images.xcassets */,
+				25A69B26193F601E00548891 /* Supporting Files */,
+			);
+			path = "Mixed language";
+			sourceTree = "<group>";
+		};
+		25A69B26193F601E00548891 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25A69B3D193F605D00548891 /* rb_main.rb */,
+				25A69B27193F601E00548891 /* Mixed language-Info.plist */,
+				25A69B28193F601E00548891 /* InfoPlist.strings */,
+				25A69B2B193F601E00548891 /* main.m */,
+				25A69B2D193F601E00548891 /* Mixed language-Prefix.pch */,
+				25A69B2E193F601E00548891 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25A69B19193F601E00548891 /* Mixed language */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A69B3A193F601E00548891 /* Build configuration list for PBXNativeTarget "Mixed language" */;
+			buildPhases = (
+				25A69B16193F601E00548891 /* Sources */,
+				25A69B17193F601E00548891 /* Frameworks */,
+				25A69B18193F601E00548891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mixed language";
+			productName = "Mixed language";
+			productReference = 25A69B1A193F601E00548891 /* Mixed language.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25A69B12193F601E00548891 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = c9iim;
+			};
+			buildConfigurationList = 25A69B15193F601E00548891 /* Build configuration list for PBXProject "Mixed language" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25A69B11193F601E00548891;
+			productRefGroup = 25A69B1B193F601E00548891 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25A69B19193F601E00548891 /* Mixed language */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25A69B18193F601E00548891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A69B2A193F601E00548891 /* InfoPlist.strings in Resources */,
+				25A69B37193F601E00548891 /* Images.xcassets in Resources */,
+				25A69B30193F601E00548891 /* Credits.rtf in Resources */,
+				25A69B35193F601E00548891 /* MainMenu.xib in Resources */,
+				25A69B3E193F605D00548891 /* rb_main.rb in Resources */,
+				25A69B45193F60C800548891 /* GreetRb.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25A69B16193F601E00548891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A69B32193F601E00548891 /* AppDelegate.applescript in Sources */,
+				25A69B43193F60C800548891 /* GreetAS.applescript in Sources */,
+				25A69B2C193F601E00548891 /* main.m in Sources */,
+				25A69B44193F60C800548891 /* GreetObjC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		25A69B28193F601E00548891 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25A69B29193F601E00548891 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		25A69B2E193F601E00548891 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25A69B2F193F601E00548891 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		25A69B33193F601E00548891 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25A69B34193F601E00548891 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25A69B38193F601E00548891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		25A69B39193F601E00548891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		25A69B3B193F601E00548891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mixed language/Mixed language-Prefix.pch";
+				INFOPLIST_FILE = "Mixed language/Mixed language-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		25A69B3C193F601E00548891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mixed language/Mixed language-Prefix.pch";
+				INFOPLIST_FILE = "Mixed language/Mixed language-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25A69B15193F601E00548891 /* Build configuration list for PBXProject "Mixed language" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A69B38193F601E00548891 /* Debug */,
+				25A69B39193F601E00548891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25A69B3A193F601E00548891 /* Build configuration list for PBXNativeTarget "Mixed language" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A69B3B193F601E00548891 /* Debug */,
+				25A69B3C193F601E00548891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25A69B12193F601E00548891 /* Project object */;
+}

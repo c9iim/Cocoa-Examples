@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2568BE00193BEBF2001EE2C7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2568BDFF193BEBF2001EE2C7 /* Cocoa.framework */; };
+		2568BE02193BEBF2001EE2C7 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2568BE01193BEBF2001EE2C7 /* AppleScriptObjC.framework */; };
+		2568BE0C193BEBF2001EE2C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2568BE0A193BEBF2001EE2C7 /* InfoPlist.strings */; };
+		2568BE0E193BEBF2001EE2C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2568BE0D193BEBF2001EE2C7 /* main.m */; };
+		2568BE12193BEBF2001EE2C7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2568BE10193BEBF2001EE2C7 /* Credits.rtf */; };
+		2568BE14193BEBF2001EE2C7 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 2568BE13193BEBF2001EE2C7 /* AppDelegate.applescript */; };
+		2568BE17193BEBF2001EE2C7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2568BE15193BEBF2001EE2C7 /* MainMenu.xib */; };
+		2568BE19193BEBF2001EE2C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2568BE18193BEBF2001EE2C7 /* Images.xcassets */; };
+		2568BE21193BEE25001EE2C7 /* NSOpenSave+MyriadHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2568BE20193BEE25001EE2C7 /* NSOpenSave+MyriadHelpers.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2568BDFC193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Show open save panel as sheet with Myriad Helpers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2568BDFF193BEBF2001EE2C7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2568BE01193BEBF2001EE2C7 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		2568BE04193BEBF2001EE2C7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2568BE05193BEBF2001EE2C7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2568BE06193BEBF2001EE2C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2568BE09193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Show open save panel as sheet with Myriad Helpers-Info.plist"; sourceTree = "<group>"; };
+		2568BE0B193BEBF2001EE2C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2568BE0D193BEBF2001EE2C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2568BE0F193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Show open save panel as sheet with Myriad Helpers-Prefix.pch"; sourceTree = "<group>"; };
+		2568BE11193BEBF2001EE2C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2568BE13193BEBF2001EE2C7 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
+		2568BE16193BEBF2001EE2C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2568BE18193BEBF2001EE2C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2568BE1F193BEE25001EE2C7 /* NSOpenSave+MyriadHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOpenSave+MyriadHelpers.h"; sourceTree = "<group>"; };
+		2568BE20193BEE25001EE2C7 /* NSOpenSave+MyriadHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOpenSave+MyriadHelpers.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2568BDF9193BEBF2001EE2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2568BE02193BEBF2001EE2C7 /* AppleScriptObjC.framework in Frameworks */,
+				2568BE00193BEBF2001EE2C7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2568BDF3193BEBF2001EE2C7 = {
+			isa = PBXGroup;
+			children = (
+				2568BE07193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers */,
+				2568BDFE193BEBF2001EE2C7 /* Frameworks */,
+				2568BDFD193BEBF2001EE2C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2568BDFD193BEBF2001EE2C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2568BDFC193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2568BDFE193BEBF2001EE2C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2568BDFF193BEBF2001EE2C7 /* Cocoa.framework */,
+				2568BE01193BEBF2001EE2C7 /* AppleScriptObjC.framework */,
+				2568BE03193BEBF2001EE2C7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2568BE03193BEBF2001EE2C7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2568BE04193BEBF2001EE2C7 /* AppKit.framework */,
+				2568BE05193BEBF2001EE2C7 /* CoreData.framework */,
+				2568BE06193BEBF2001EE2C7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2568BE07193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2568BE13193BEBF2001EE2C7 /* AppDelegate.applescript */,
+				2568BE15193BEBF2001EE2C7 /* MainMenu.xib */,
+				2568BE18193BEBF2001EE2C7 /* Images.xcassets */,
+				2568BE22193BEE2A001EE2C7 /* Helper files */,
+				2568BE08193BEBF2001EE2C7 /* Supporting Files */,
+			);
+			path = "Show open save panel as sheet with Myriad Helpers";
+			sourceTree = "<group>";
+		};
+		2568BE08193BEBF2001EE2C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2568BE09193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers-Info.plist */,
+				2568BE0A193BEBF2001EE2C7 /* InfoPlist.strings */,
+				2568BE0D193BEBF2001EE2C7 /* main.m */,
+				2568BE0F193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers-Prefix.pch */,
+				2568BE10193BEBF2001EE2C7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2568BE22193BEE2A001EE2C7 /* Helper files */ = {
+			isa = PBXGroup;
+			children = (
+				2568BE1F193BEE25001EE2C7 /* NSOpenSave+MyriadHelpers.h */,
+				2568BE20193BEE25001EE2C7 /* NSOpenSave+MyriadHelpers.m */,
+			);
+			name = "Helper files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2568BDFB193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2568BE1C193BEBF2001EE2C7 /* Build configuration list for PBXNativeTarget "Show open save panel as sheet with Myriad Helpers" */;
+			buildPhases = (
+				2568BDF8193BEBF2001EE2C7 /* Sources */,
+				2568BDF9193BEBF2001EE2C7 /* Frameworks */,
+				2568BDFA193BEBF2001EE2C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Show open save panel as sheet with Myriad Helpers";
+			productName = "Show open save panel as sheet with Myriad Helpers";
+			productReference = 2568BDFC193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2568BDF4193BEBF2001EE2C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = c9iim;
+			};
+			buildConfigurationList = 2568BDF7193BEBF2001EE2C7 /* Build configuration list for PBXProject "Show open save panel as sheet with Myriad Helpers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2568BDF3193BEBF2001EE2C7;
+			productRefGroup = 2568BDFD193BEBF2001EE2C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2568BDFB193BEBF2001EE2C7 /* Show open save panel as sheet with Myriad Helpers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2568BDFA193BEBF2001EE2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2568BE0C193BEBF2001EE2C7 /* InfoPlist.strings in Resources */,
+				2568BE19193BEBF2001EE2C7 /* Images.xcassets in Resources */,
+				2568BE12193BEBF2001EE2C7 /* Credits.rtf in Resources */,
+				2568BE17193BEBF2001EE2C7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2568BDF8193BEBF2001EE2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2568BE14193BEBF2001EE2C7 /* AppDelegate.applescript in Sources */,
+				2568BE0E193BEBF2001EE2C7 /* main.m in Sources */,
+				2568BE21193BEE25001EE2C7 /* NSOpenSave+MyriadHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2568BE0A193BEBF2001EE2C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2568BE0B193BEBF2001EE2C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2568BE10193BEBF2001EE2C7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2568BE11193BEBF2001EE2C7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		2568BE15193BEBF2001EE2C7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2568BE16193BEBF2001EE2C7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2568BE1A193BEBF2001EE2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2568BE1B193BEBF2001EE2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2568BE1D193BEBF2001EE2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Show open save panel as sheet with Myriad Helpers/Show open save panel as sheet with Myriad Helpers-Prefix.pch";
+				INFOPLIST_FILE = "Show open save panel as sheet with Myriad Helpers/Show open save panel as sheet with Myriad Helpers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2568BE1E193BEBF2001EE2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Show open save panel as sheet with Myriad Helpers/Show open save panel as sheet with Myriad Helpers-Prefix.pch";
+				INFOPLIST_FILE = "Show open save panel as sheet with Myriad Helpers/Show open save panel as sheet with Myriad Helpers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2568BDF7193BEBF2001EE2C7 /* Build configuration list for PBXProject "Show open save panel as sheet with Myriad Helpers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2568BE1A193BEBF2001EE2C7 /* Debug */,
+				2568BE1B193BEBF2001EE2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2568BE1C193BEBF2001EE2C7 /* Build configuration list for PBXNativeTarget "Show open save panel as sheet with Myriad Helpers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2568BE1D193BEBF2001EE2C7 /* Debug */,
+				2568BE1E193BEBF2001EE2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2568BDF4193BEBF2001EE2C7 /* Project object */;
+}

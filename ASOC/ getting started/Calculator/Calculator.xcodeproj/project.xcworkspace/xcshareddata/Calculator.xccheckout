@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0D0A2F7D-54CE-499B-A7F0-BF6019CB8285</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Calculator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6C82A8A9-3944-4C92-81C9-CF0997C9FD92</key>
+		<string>https://github.com/c9iim/Cocoa-Examples.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ASOC/ getting started/Calculator/Calculator.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6C82A8A9-3944-4C92-81C9-CF0997C9FD92</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/c9iim/Cocoa-Examples.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6C82A8A9-3944-4C92-81C9-CF0997C9FD92</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6C82A8A9-3944-4C92-81C9-CF0997C9FD92</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cocoa Examples</string>
+		</dict>
+	</array>
+</dict>
+</plist>

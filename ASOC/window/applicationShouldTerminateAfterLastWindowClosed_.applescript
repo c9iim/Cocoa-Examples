@@ -1,0 +1,4 @@
+	on applicationShouldTerminateAfterLastWindowClosed:sender
+		return current application's NSTerminateNow
+	end applicationShouldTerminateAfterLastWindowClosed:
+
