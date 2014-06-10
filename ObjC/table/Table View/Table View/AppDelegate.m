@@ -12,20 +12,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    NSMutableArray *contents = [NSMutableArray array];
-    
-//    [contents addObject:@{@"foo":@"foo1", @"bar":@"bar1"}];
-//    [contents addObject:@{@"foo":@"foo2", @"bar":@"bar2"}];
-//    [contents addObject:@{@"foo":@"foo3", @"bar":@"bar3"}];
-    
-    for (int i=1; i<=100; i++) {
-        [contents addObject:@{
-                              @"foo":[NSString stringWithFormat:@"foo%d",i],
-                              @"bar":[NSString stringWithFormat:@"bar%d",i]
-                              }];
-    }
-    
-    self.contents = contents;
+    // Insert code here to initialize your application
 }
 
 @end

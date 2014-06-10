@@ -23,6 +23,7 @@
 		257F490C1946BCA40017C1AF /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 257F49071946BCA40017C1AF /* 3.png */; };
 		257F490D1946BCA40017C1AF /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 257F49081946BCA40017C1AF /* 2.png */; };
 		257F490E1946BCA40017C1AF /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 257F49091946BCA40017C1AF /* 4.png */; };
+		25874AD81947863400B33F6B /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 25874AD71947863400B33F6B /* TableViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		257F49071946BCA40017C1AF /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		257F49081946BCA40017C1AF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		257F49091946BCA40017C1AF /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		25874AD61947863400B33F6B /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
+		25874AD71947863400B33F6B /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				25379F61193FFB1D0051829B /* MainMenu.xib */,
 				25379F64193FFB1D0051829B /* Images.xcassets */,
 				25379F53193FFB1D0051829B /* Supporting Files */,
+				25874AD61947863400B33F6B /* TableViewDataSource.h */,
+				25874AD71947863400B33F6B /* TableViewDataSource.m */,
 			);
 			path = "Table View";
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25874AD81947863400B33F6B /* TableViewDataSource.m in Sources */,
 				25379F60193FFB1D0051829B /* AppDelegate.m in Sources */,
 				25379F59193FFB1D0051829B /* main.m in Sources */,
 			);
