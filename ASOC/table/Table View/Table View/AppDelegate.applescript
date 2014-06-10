@@ -8,23 +8,18 @@
 
 script AppDelegate
 	property parent : class "NSObject"
-    property NSMutableArray : class "NSMutableArray"
-    property ViewDataObject : class "ViewDataObject"
 	
 	-- IBOutlets
 	property window : missing value
     property theArrayController : missing value
 	
 	on applicationWillFinishLaunching_(aNotification)
-        set theObjects to NSMutableArray's array
-        repeat with i from 0 to 6
-            set theModel to ViewDataObject's new
-            set |name| of theModel to "name " & i
-            set foo of theModel to "foo " & i
-            tell theObjects to addObject_(theModel)
+        set theContents to {}
+        repeat with i from 1 to 100
+            copy {foo:"foo" & i, bar:"bar" & i} to the end of theContents
         end repeat
-        tell theArrayController to setContent_(theObjects)
-        end applicationWillFinishLaunching_
+        tell theArrayController to setContent_(theContents)
+    end applicationWillFinishLaunching_
 	
 	on applicationShouldTerminate_(sender)
 		-- Insert code here to do any housekeeping before your application quits 
@@ -32,3 +27,4 @@ script AppDelegate
 	end applicationShouldTerminate_
 	
 end script
+

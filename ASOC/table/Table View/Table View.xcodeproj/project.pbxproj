@@ -15,7 +15,10 @@
 		2553CF271941BAE4002A5E21 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 2553CF261941BAE4002A5E21 /* AppDelegate.applescript */; };
 		2553CF2A1941BAE4002A5E21 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2553CF281941BAE4002A5E21 /* MainMenu.xib */; };
 		2553CF2C1941BAE4002A5E21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2553CF2B1941BAE4002A5E21 /* Images.xcassets */; };
-		2553CF331941BBAE002A5E21 /* ViewDataObject.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 2553CF321941BBAE002A5E21 /* ViewDataObject.applescript */; };
+		257F49141946C56F0017C1AF /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 257F49101946C56F0017C1AF /* 4.png */; };
+		257F49151946C56F0017C1AF /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 257F49111946C56F0017C1AF /* 3.png */; };
+		257F49161946C56F0017C1AF /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 257F49121946C56F0017C1AF /* 2.png */; };
+		257F49171946C56F0017C1AF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 257F49131946C56F0017C1AF /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +36,10 @@
 		2553CF261941BAE4002A5E21 /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
 		2553CF291941BAE4002A5E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2553CF2B1941BAE4002A5E21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2553CF321941BBAE002A5E21 /* ViewDataObject.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = ViewDataObject.applescript; sourceTree = "<group>"; };
+		257F49101946C56F0017C1AF /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		257F49111946C56F0017C1AF /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		257F49121946C56F0017C1AF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		257F49131946C56F0017C1AF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		2553CF061941BAE4002A5E21 = {
 			isa = PBXGroup;
 			children = (
+				257F49181946C57A0017C1AF /* Documents */,
 				2553CF1A1941BAE4002A5E21 /* Table View */,
 				2553CF111941BAE4002A5E21 /* Frameworks */,
 				2553CF101941BAE4002A5E21 /* Products */,
@@ -93,7 +100,6 @@
 				2553CF281941BAE4002A5E21 /* MainMenu.xib */,
 				2553CF2B1941BAE4002A5E21 /* Images.xcassets */,
 				2553CF1B1941BAE4002A5E21 /* Supporting Files */,
-				2553CF321941BBAE002A5E21 /* ViewDataObject.applescript */,
 			);
 			path = "Table View";
 			sourceTree = "<group>";
@@ -108,6 +114,17 @@
 				2553CF231941BAE4002A5E21 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		257F49181946C57A0017C1AF /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				257F49131946C56F0017C1AF /* 1.png */,
+				257F49121946C56F0017C1AF /* 2.png */,
+				257F49111946C56F0017C1AF /* 3.png */,
+				257F49101946C56F0017C1AF /* 4.png */,
+			);
+			name = Documents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,8 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2553CF1F1941BAE4002A5E21 /* InfoPlist.strings in Resources */,
+				257F49171946C56F0017C1AF /* 1.png in Resources */,
 				2553CF2C1941BAE4002A5E21 /* Images.xcassets in Resources */,
+				257F49161946C56F0017C1AF /* 2.png in Resources */,
 				2553CF251941BAE4002A5E21 /* Credits.rtf in Resources */,
+				257F49151946C56F0017C1AF /* 3.png in Resources */,
+				257F49141946C56F0017C1AF /* 4.png in Resources */,
 				2553CF2A1941BAE4002A5E21 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,7 +197,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2553CF331941BBAE002A5E21 /* ViewDataObject.applescript in Sources */,
 				2553CF271941BAE4002A5E21 /* AppDelegate.applescript in Sources */,
 				2553CF211941BAE4002A5E21 /* main.m in Sources */,
 			);
@@ -327,6 +347,7 @@
 				2553CF311941BAE4002A5E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
