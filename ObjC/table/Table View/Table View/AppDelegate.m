@@ -7,20 +7,25 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewDataObject.h"
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    NSMutableArray *objects = [NSMutableArray array];
-    for (int i = 0; i < 7; i++) {
-        ViewDataObject *model = [[ViewDataObject alloc] init];
-        model.name = [NSString stringWithFormat:@"name %d", i];
-        model.foo = [NSString stringWithFormat:@"foo %d", i];
-        [objects addObject:model];
+    NSMutableArray *contents = [NSMutableArray array];
+    
+//    [contents addObject:@{@"foo":@"foo1", @"bar":@"bar1"}];
+//    [contents addObject:@{@"foo":@"foo2", @"bar":@"bar2"}];
+//    [contents addObject:@{@"foo":@"foo3", @"bar":@"bar3"}];
+    
+    for (int i=1; i<=100; i++) {
+        [contents addObject:@{
+                              @"foo":[NSString stringWithFormat:@"foo%d",i],
+                              @"bar":[NSString stringWithFormat:@"bar%d",i]
+                              }];
     }
-    [_tableArrayController setContent:objects];
+    
+    self.contents = contents;
 }
 
 @end
