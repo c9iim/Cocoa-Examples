@@ -11,20 +11,20 @@ script AppDelegate
 	
 	-- IBOutlets
 	property window : missing value
-    property theArrayController : missing value
+	property theArrayController : missing value
 	
-	on applicationWillFinishLaunching_(aNotification)
-        set theContents to {}
-        repeat with i from 1 to 100
-            copy {foo:"foo" & i, bar:"bar" & i} to the end of theContents
-        end repeat
-        tell theArrayController to setContent_(theContents)
-    end applicationWillFinishLaunching_
+	on applicationWillFinishLaunching:aNotification
+		set theContents to {}
+		repeat with i from 1 to 100
+			copy {foo:"foo" & i, bar:"bar" & i} to the end of theContents
+		end repeat
+		tell theArrayController to setContent:theContents
+	end applicationWillFinishLaunching:
 	
-	on applicationShouldTerminate_(sender)
-		-- Insert code here to do any housekeeping before your application quits 
+	on applicationShouldTerminate:sender
+		-- Insert code here to do any housekeeping before your application quits
 		return current application's NSTerminateNow
-	end applicationShouldTerminate_
+	end applicationShouldTerminate:
 	
 end script
 

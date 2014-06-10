@@ -15,19 +15,19 @@ script AppDelegate
     property Y : missing value
     property Z : missing value
 	
-    on calc_(sender)
-        set _x to X's doubleValue as real
-        set _y to Y's doubleValue as real
-        tell Z to setDoubleValue_(_x + _y)
-    end calc_
-    
-	on applicationWillFinishLaunching_(aNotification)
-		-- Insert code here to initialize your application before any files are opened 
-	end applicationWillFinishLaunching_
+	on calc:sender
+		set _x to X's doubleValue as real
+		set _y to Y's doubleValue as real
+		tell Z to setDoubleValue:(_x + _y)
+	end calc:
 	
-	on applicationShouldTerminate_(sender)
-		-- Insert code here to do any housekeeping before your application quits 
+	on applicationWillFinishLaunching:aNotification
+		-- Insert code here to initialize your application before any files are opened
+	end applicationWillFinishLaunching:
+	
+	on applicationShouldTerminate:sender
+		-- Insert code here to do any housekeeping before your application quits
 		return current application's NSTerminateNow
-	end applicationShouldTerminate_
+	end applicationShouldTerminate:
 	
 end script

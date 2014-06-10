@@ -8,24 +8,25 @@
 
 script AppDelegate
 	property parent : class "NSObject"
+    property NSMaxYEdge : current application's NSMaxYEdge
 	
 	-- IBOutlets
 	property window : missing value
     property popover : missing value
 	
-    on togglePopover_(sender)
-        if not popover's shown then
-            tell popover to showRelativeToRect_ofView_preferredEdge_(sender's |bounds|, sender, current application's NSMaxYEdge)
-        end if
-    end togglePopover_
+	on togglePopover:sender
+		if not popover's shown then
+			tell popover to showRelativeToRect:(sender's |bounds|) ofView:sender preferredEdge:NSMaxYEdge
+		end if
+	end togglePopover:
 	
-	on applicationWillFinishLaunching_(aNotification)
-		-- Insert code here to initialize your application before any files are opened 
-	end applicationWillFinishLaunching_
+	on applicationWillFinishLaunching:aNotification
+		-- Insert code here to initialize your application before any files are opened
+	end applicationWillFinishLaunching:
 	
-	on applicationShouldTerminate_(sender)
-		-- Insert code here to do any housekeeping before your application quits 
+	on applicationShouldTerminate:sender
+		-- Insert code here to do any housekeeping before your application quits
 		return current application's NSTerminateNow
-	end applicationShouldTerminate_
+	end applicationShouldTerminate:
 	
 end script

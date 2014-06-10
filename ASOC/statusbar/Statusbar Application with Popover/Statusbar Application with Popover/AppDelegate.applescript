@@ -8,6 +8,9 @@
 
 script AppDelegate
 	property parent : class "NSObject"
+    property NSStatusBar : class "NSStatusBar"
+    property NSMaxYEdge : current application's NSMaxYEdge
+    property NSVariableStatusItemLength : current application's NSVariableStatusItemLength
     --property PopoverAction : class "PopoverAction"
     --property thePopoverAction : null
     property statusItem : null
@@ -16,40 +19,41 @@ script AppDelegate
 	property window : missing value
     property popover : missing value
 	
-    on setupStatusbarItem(title)
-        tell current application's NSStatusBar to set systemStatusBar to systemStatusBar()
-        tell systemStatusBar to set statusItem to statusItemWithLength_(current application's NSVariableStatusItemLength)
-        tell statusItem to setTitle_(title)
-        tell statusItem to setHighlightMode_(1)
-        tell statusItem to setAction_("togglePopover:")
-    end setupStatusbarItem
+	on setupStatusbarItem(title)
+		tell NSStatusBar to set systemStatusBar to systemStatusBar()
+		tell systemStatusBar to statusItemWithLength:NSVariableStatusItemLength
+        set statusItem to result
+		tell statusItem to setTitle:title
+		tell statusItem to setHighlightMode:1
+		tell statusItem to setAction:"togglePopover:"
+	end setupStatusbarItem
     
-    on togglePopover_(sender)
-        if not popover's shown then
-            tell popover to showRelativeToRect_ofView_preferredEdge_(sender's |bounds|, sender, current application's NSMaxYEdge)
+	on togglePopover:sender
+		if not popover's shown then
+			tell popover to showRelativeToRect:(sender's |bounds|) ofView:sender preferredEdge:NSMaxYEdge
         else
-            tell popover to |close|()
-        end if
-    end togglePopover_
+			tell popover to |close|()
+		end if
+	end togglePopover:
     
     (*
-    on togglePopover_(sender)
+    on togglePopover:sender
         if not popover's shown then
-           tell thePopoverAction to openPopover_(sender)
+           tell thePopoverAction to openPopover:sender
         else
-           tell thePopoverAction to closePopover_(sender)
+           tell thePopoverAction to closePopover:sender
         end if
-    end togglePopover_
+    end togglePopover:
      *)
     
-	on applicationWillFinishLaunching_(aNotification)
-        --set thePopoverAction to PopoverAction's alloc's initWithPopover_(popover)
+	on applicationWillFinishLaunching:aNotification
+		--set thePopoverAction to PopoverAction's alloc's initWithPopover:popover
 		tell me to setupStatusbarItem("ShowPopover")
-	end applicationWillFinishLaunching_
+	end applicationWillFinishLaunching:
 	
-	on applicationShouldTerminate_(sender)
+	on applicationShouldTerminate:sender
 		-- Insert code here to do any housekeeping before your application quits
 		return current application's NSTerminateNow
-	end applicationShouldTerminate_
-	
+	end applicationShouldTerminate:
+
 end script

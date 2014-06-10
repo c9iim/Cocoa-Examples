@@ -8,6 +8,9 @@
 
 script AppDelegate
 	property parent : class "NSObject"
+    property NSStatusBar : class "NSStatusBar"
+    property NSImage : class "NSImage"
+    property NSVariableStatusItemLength : current application's NSVariableStatusItemLength
     property statusItem : missing value
 	
 	-- IBOutlets
@@ -15,28 +18,29 @@ script AppDelegate
 	property mainWindow : missing value
     property statusMenu : missing value
     
-    on showWindow_(sender)
-        activate
-        tell mainWindow to makeKeyAndOrderFront_(me)
-    end showWindow_
-    
-	on applicationWillFinishLaunching_(aNotification)
-        tell me to setupStatusbarItem("TEST")
-	end applicationWillFinishLaunching_
+	on showWindow:sender
+		activate
+		tell mainWindow to makeKeyAndOrderFront:me
+	end showWindow:
 	
-	on applicationShouldTerminate_(sender)
+	on applicationWillFinishLaunching:aNotification
+		tell me to setupStatusbarItem("TEST")
+	end applicationWillFinishLaunching:
+	
+	on applicationShouldTerminate:sender
 		-- Insert code here to do any housekeeping before your application quits
 		return current application's NSTerminateNow
-	end applicationShouldTerminate_
+	end applicationShouldTerminate:
 	
-    on setupStatusbarItem(title)
-        tell current application's NSStatusBar to set systemStatusBar to systemStatusBar()
-        tell systemStatusBar to set statusItem to statusItemWithLength_(current application's NSVariableStatusItemLength)
-        tell statusItem to setHighlightMode_(1)
-        tell statusItem to setTitle_(title)
-        tell current application's NSImage to imageNamed_("AppIconTemplate")
-        tell statusItem to setImage_(result)
-        tell statusItem to setMenu_(statusMenu)
-    end setupStatusbarItem
+	on setupStatusbarItem(title)
+		tell NSStatusBar to set systemStatusBar to systemStatusBar()
+		tell systemStatusBar to statusItemWithLength:NSVariableStatusItemLength
+		set statusItem to result
+		tell statusItem to setHighlightMode:1
+		tell statusItem to setTitle:title
+		tell NSImage to imageNamed:"AppIconTemplate"
+		tell statusItem to setImage:result
+		tell statusItem to setMenu:statusMenu
+	end setupStatusbarItem
     
 end script

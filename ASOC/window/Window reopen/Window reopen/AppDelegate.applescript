@@ -13,21 +13,21 @@ script AppDelegate
 	property window : missing value
 	property mainWindow : missing value -- connect in Interface Builder
     
-    on applicationShouldHandleReopen_hasVisibleWindows_(sender, visible)
+    on applicationShouldHandleReopen:sender hasVisibleWindows:visible
         if visible is false then
             activate
-            tell mainWindow to makeKeyAndOrderFront_(me)
+            tell mainWindow to makeKeyAndOrderFront:me
         end if
         return yes
-    end applicationShouldHandleReopen_hasVisibleWindows_
+    end applicationShouldHandleReopen:hasVisibleWindows:
     
-	on applicationWillFinishLaunching_(aNotification)
+	on applicationWillFinishLaunching:aNotification
 		-- Insert code here to initialize your application before any files are opened
-	end applicationWillFinishLaunching_
+	end applicationWillFinishLaunching:
 	
-	on applicationShouldTerminate_(sender)
+	on applicationShouldTerminate:sender
 		-- Insert code here to do any housekeeping before your application quits
 		return current application's NSTerminateNow
-	end applicationShouldTerminate_
-	
+	end applicationShouldTerminate:
+    
 end script

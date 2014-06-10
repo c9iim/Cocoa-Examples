@@ -15,86 +15,86 @@ script AppDelegate
 	property window : missing value
     property mainWindow : missing value
     
-	on applicationWillFinishLaunching_(aNotification)
+	on applicationWillFinishLaunching:aNotification
 		set theSheetModal to SheetModal's alloc's init
-	end applicationWillFinishLaunching_
+	end applicationWillFinishLaunching:
 	
-	on applicationShouldTerminate_(sender)
-		-- Insert code here to do any housekeeping before your application quits 
+	on applicationShouldTerminate:sender
+		-- Insert code here to do any housekeeping before your application quits
 		return current application's NSTerminateNow
-	end applicationShouldTerminate_
+	end applicationShouldTerminate:
 	
-    on createFile_(sender)
-        set theUrl to missing value --current application's NSURL's fileURLWithPath_(POSIX path of the path to the desktop)
-        set theFileTypes to {"txt", "'TEXT'"}
-        set theFileName to missing value --"Untitled Document"
-        tell theSheetModal to saveSheetOnWindow_at_types_name_action_(mainWindow, theUrl, theFileTypes, theFileName, {"createDone:", me})
-    end createFile_
+	on createFile:sender
+		set theUrl to missing value --current application's NSURL's fileURLWithPath:(POSIX path of the (path to the desktop))
+		set theFileTypes to {"txt", "'TEXT'"}
+		set theFileName to missing value --"Untitled Document"
+		tell theSheetModal to saveSheetOnWindow:mainWindow |at|:theUrl types:theFileTypes |name|:theFileName action:{"createDone:", me}
+	end createFile:
     
-    on showSavePanelSheet_(sender)
-        set theUrl to missing value --current application's NSURL's fileURLWithPath_(POSIX path of the path to the desktop)
-        set theFileTypes to {"txt", "'TEXT'"}
-        set theFileName to missing value --"Untitled Document"
-        tell theSheetModal to saveSheetOnWindow_at_types_name_action_(mainWindow, theUrl, theFileTypes, theFileName, {"saveSheetDone:", me})
-    end showSavePanelSheet_
+	on showSavePanelSheet:sender
+		set theUrl to missing value --current application's NSURL's fileURLWithPath:(POSIX path of the (path to the desktop))
+		set theFileTypes to {"txt", "'TEXT'"}
+		set theFileName to missing value --"Untitled Document"
+		tell theSheetModal to saveSheetOnWindow:mainWindow |at|:theUrl types:theFileTypes |name|:theFileName action:{"saveSheetDone:", me}
+	end showSavePanelSheet:
     
-    on showOpenPanelSheet_(sender)
-        set theUrl to missing value --current application's NSURL's fileURLWithPath_(POSIX path of the path to the desktop)
-        set theFileTypes to {"txt", "'TEXT'"}
-        tell theSheetModal to openSheetOnWindow_at_types_action_(mainWindow, theUrl, theFileTypes, {"openSheetDone:", me})
-    end showOpenPanelSheet_
+	on showOpenPanelSheet:sender
+		set theUrl to missing value --current application's NSURL's fileURLWithPath:(POSIX path of the (path to the desktop))
+		set theFileTypes to {"txt", "'TEXT'"}
+		tell theSheetModal to openSheetOnWindow:mainWindow |at|:theUrl types:theFileTypes action:{"openSheetDone:", me}
+	end showOpenPanelSheet:
     
-    on showSavePanelSheetForImage_(sender)
-        set theLocation to missing value
-        set theFileTypes to {"tiff"}
-        set theFileName to missing value
-        tell theSheetModal to saveSheetOnWindow_at_types_name_action_(mainWindow, theLocation, theFileTypes, theFileName, {"saveSheetForImageDone:", me})
-    end showSavePanelSheetForImage_
-    
-    on showOpenPanelSheetForImage_(sender)
-        set theUrl to missing value
-        set theFileTypes to {"png", "PNG", "tiff"}
-        tell theSheetModal to openSheetOnWindow_at_types_action_(mainWindow, theUrl, theFileTypes, {"openSheetForImageDone:", me})
-    end showOpenPanelSheetForImage_
+	on showSavePanelSheetForImage:sender
+		set theLocation to missing value
+		set theFileTypes to {"tiff"}
+		set theFileName to missing value
+		tell theSheetModal to saveSheetOnWindow:mainWindow |at|:theLocation types:theFileTypes |name|:theFileName action:{"saveSheetForImageDone:", me}
+	end showSavePanelSheetForImage:
+	
+	on showOpenPanelSheetForImage:sender
+		set theUrl to missing value
+		set theFileTypes to {"png", "PNG", "tiff"}
+		tell theSheetModal to openSheetOnWindow:mainWindow |at|:theUrl types:theFileTypes action:{"openSheetForImageDone:", me}
+	end showOpenPanelSheetForImage:
     
 --==========================
     
-    on createDone_(theUrl)
-        set thePath to theUrl's |path|
-        set theFileManager to current application's NSFileManager's defaultManager
-        tell theFileManager to createFileAtPath_contents_attributes_(thePath, missing value, missing value)
-        log result
-    end createDone_
-    
-    on saveSheetDone_(theUrl)
-        set theContents to current application's NSString's alloc's initWithString_("Hello world")
-        set thePath to theUrl's |path|
-        set NSUTF8StringEncoding to current application's NSUTF8StringEncoding
-        tell theContents to writeToURL_atomically_encoding_error_(theUrl, 1, NSUTF8StringEncoding, missing value)
-        log result
-    end saveSheetDone_
-    
-    on openSheetDone_(theUrl)
-        set NSString to current application's NSString
-        set NSUTF8StringEncoding to current application's NSUTF8StringEncoding
-        set theContents to NSString's stringWithContentsOfURL_encoding_error_(theUrl, NSUTF8StringEncoding, missing value)
-        log result
-    end openSheetDone_
-    
-    on saveSheetForImageDone_(theUrl)
-        set NSBundle to current application's NSBundle
-        set theSourceUrl to NSBundle's mainBundle's URLForResource_withExtension_("example", "png")
-        set NSImage to current application's NSImage
-        set theImage to NSImage's alloc's initWithContentsOfURL_(theSourceUrl)
-        tell theImage's TIFFRepresentation to writeToURL_atomically_(theUrl, 1)
-        log result
-    end saveSheetForImageDone_
-    
-    on openSheetForImageDone_(theUrl)
-        set NSImage to current application's NSImage
-        set theImage to NSImage's alloc's initWithContentsOfURL_(theUrl)
-        log result
-    end openSheetForImageDone_
+	on createDone:theUrl
+		set thePath to theUrl's |path|
+		set theFileManager to current application's NSFileManager's defaultManager
+		tell theFileManager to createFileAtPath:thePath |contents|:(missing value) attributes:(missing value)
+		log result
+	end createDone:
+	
+	on saveSheetDone:theUrl
+		set theContents to current application's NSString's alloc's initWithString:"Hello world"
+		set thePath to theUrl's |path|
+		set NSUTF8StringEncoding to current application's NSUTF8StringEncoding
+		tell theContents to writeToURL:theUrl atomically:1 encoding:NSUTF8StringEncoding |error|:(missing value)
+		log result
+	end saveSheetDone:
+	
+	on openSheetDone:theUrl
+		set NSString to current application's NSString
+		set NSUTF8StringEncoding to current application's NSUTF8StringEncoding
+		set theContents to NSString's stringWithContentsOfURL:theUrl encoding:NSUTF8StringEncoding |error|:(missing value)
+		log result
+	end openSheetDone:
+	
+	on saveSheetForImageDone:theUrl
+		set NSBundle to current application's NSBundle
+		set theSourceUrl to NSBundle's mainBundle's URLForResource:"example" withExtension:"png"
+		set NSImage to current application's NSImage
+		set theImage to NSImage's alloc's initWithContentsOfURL:theSourceUrl
+		tell theImage's TIFFRepresentation to writeToURL:theUrl atomically:1
+		log result
+	end saveSheetForImageDone:
+	
+	on openSheetForImageDone:theUrl
+		set NSImage to current application's NSImage
+		set theImage to NSImage's alloc's initWithContentsOfURL:theUrl
+		log result
+	end openSheetForImageDone:
     
 --==========================
     

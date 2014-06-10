@@ -12,17 +12,17 @@ script AppDelegate
 	-- IBOutlets
 	property window : missing value
 	
-	on applicationWillFinishLaunching_(aNotification)
-		-- Insert code here to initialize your application before any files are opened 
-	end applicationWillFinishLaunching_
+	on applicationWillFinishLaunching:aNotification
+		-- Insert code here to initialize your application before any files are opened
+	end applicationWillFinishLaunching:
 	
-	on applicationShouldTerminate_(sender)
-		-- Insert code here to do any housekeeping before your application quits 
+	on applicationShouldTerminate:sender
+		-- Insert code here to do any housekeeping before your application quits
 		return current application's NSTerminateNow
-	end applicationShouldTerminate_
-    
-    on application_openFiles_(sender, filenames)
-        log filenames
-    end application_openFiles_
+	end applicationShouldTerminate:
+	
+	on |application|:sender openFiles:filenames
+		log filenames
+	end |application|:openFiles:
 	
 end script
