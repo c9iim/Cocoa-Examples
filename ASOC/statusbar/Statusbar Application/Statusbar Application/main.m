@@ -2,8 +2,8 @@
 //  main.m
 //  Statusbar Application
 //
-//  Created by tom on 2014/05/25.
-//  Copyright (c) 2014年 tom. All rights reserved.
+//  Created by c9iim on 2014/05/25.
+//  Copyright (c) 2014年 c9iim. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
